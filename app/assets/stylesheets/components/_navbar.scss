@@ -12,11 +12,32 @@
   height: 40px;
 }
 
-.product-search input {
-  border-radius: 25px;
-  width: 649px;
+.product-search {
 }
 
-.search-button {
-  border-style: none;
+.product-search input {
+  border: 1px inset rgba(128, 128, 128, 0.5);
+  border-radius: 25px;
+  width: 649px;
+  background-color: rgb(239, 239, 239);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+
+.product-search input:hover {
+  border: 1px inset black;
+}
+
+.search-btn {
+  position: absolute;
+  right: 12px;
+}
+
+.search-btn i {
+  opacity: 0.6;
+}
+
+.input-search {
+  position: relative;
+  display: flex;
 }
