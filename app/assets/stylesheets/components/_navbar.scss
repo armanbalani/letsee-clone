@@ -1,5 +1,5 @@
 .navbar-lewagon {
-  // justify-content: space-between;
+  justify-content: space-between;
   background: white;
 }
 
@@ -12,6 +12,9 @@
   height: 40px;
 }
 
+#navbarSupportedContent {
+  align-items: center;
+}
 .product-search {
 }
 
@@ -33,6 +36,7 @@
   right: 12px;
 }
 
+
 .search-btn i {
   opacity: 0.6;
 }
@@ -40,4 +44,6 @@
 .input-search {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
