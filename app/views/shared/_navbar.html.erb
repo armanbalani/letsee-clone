@@ -33,25 +33,27 @@
           </div>
         </li>
       <% else %>
+      <div class="three-items">
         <li class="nav-item">
-          <%= link_to "Sell on Etsy", profile_sell_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Register", new_user_registration_path, class: "nav-link" %>
+        <%= link_to "Sell on Etsy", profile_sell_path, class: "three-item" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Sign in", new_user_session_path, class: "nav-link btn btn-outline-secondary btn-sm mx-2 small" %>
+        <%= link_to "Register", new_user_registration_path, class: "three-item" %>
         </li>
-        <li>
-          <hr style="width: 1px; height: 50px; background: black; border: none; margin: 0px;" class= "mx-2"/>
+        <li class="nav-item">
+          <%= link_to "Sign in", new_user_session_path, class: "btn btn-outline-dark btn-sm mx-2 small" %>
         </li>
-        <div class="cart">
-          <li class="nav-item">
-            <%= link_to "cart" do %>
-              <i class="nav-link fas fa-shopping-cart p-0 px-1"></i>
-              <p class="text-center">cart</p>
+      <li>
+        <hr style="width: 1px; height: 50px; background: rgb(238, 238, 238); border: none; margin: 0px;" class= "mx-2"/>
+      </li>
+      <div class="cart">
+        <li class="nav-item">
+          <%= link_to "cart" do %>
+            <i class="nav-link fas fa-shopping-cart p-0 px-1"></i>
+            <!-- <p class="text-center">cart</p> -->
           <% end %>
         </li>
+      </div>
       </div>
       <% end %>
     </ul>
