@@ -7,4 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-categories = ["Vibrating Tools", "Toys", "Curry Sauces", "Celebrity Penis Molds", "Celebrity Coochie Molds", "Indian Cooking Kits", "Trains", "Tanks", "Bottled Water", "Potions", "Harry Potter Memorabilia", "Karate Gear", "Breast Pumps"]
+product_categories = ["Vibrating Tools", "Toys", "Curry Sauces", "Celebrity Penis Molds", "Celebrity Coochie Molds", "Indian Cooking Kits", "Trains", "Tanks", "Bottled Water", "Potions", "Harry Potter Memorabilia", "Karate Gear", "Breast Pumps"]
+
+puts "creating categories"
+
+product_categories.each do |category|
+  Category.create(name: category)
+end
+
+puts "done"
+
